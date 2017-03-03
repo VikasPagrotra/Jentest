@@ -13,9 +13,9 @@ public class NewTest {
 private WebDriver driver;
   @Test
   public void ftest() {
-	    driver.get("http://www.guru99.com/selenium-tutorial.html");  
+	    driver.get("https://www.bravernconcierge.com/");  
 		String title = driver.getTitle();				 
-		Assert.assertTrue(title.contains("Free Selenium Tutorials"));
+		Assert.assertTrue(title.contains("Bravern Concierge"));
   }
   @BeforeTest
   public void beforeTest() {
