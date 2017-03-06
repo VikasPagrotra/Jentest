@@ -23,7 +23,8 @@
             <version>6.8</version>								
             <scope>test</scope>							  			
        </dependency>				
-	</dependencies>
+  </dependencies>
+  
 	 	<build>
    	    <plugins>
 			<plugin>
@@ -37,6 +38,7 @@
     	</suiteXmlFiles>
   		</configuration>
 		</plugin>
+		
 		<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <version>3.1</version>
@@ -48,4 +50,4 @@
             </plugin>
 	  </plugins>
      </build>
-	</project>
+</project>
