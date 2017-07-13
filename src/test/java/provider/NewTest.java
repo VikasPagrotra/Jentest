@@ -23,7 +23,7 @@ private WebDriver driver;
 
 @Test
   public void ftest() {
-	    driver.get("https://www.bravernconcierge.com/admin/");  
+	    driver.get("http://www.bravern-concierge.com/admin/");  
 	    /*driver.get(baseUrl + "/admin/");*/
 	    /*String title = driver.getTitle();*/				 
 		WebElement notificationCheck = null;
