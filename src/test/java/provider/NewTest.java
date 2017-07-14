@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;		
-import org.openqa.selenium.WebElement;
+/*import org.openqa.selenium.WebElement;*/
 /*import org.openqa.selenium.firefox.FirefoxDriver;*/
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -19,17 +19,17 @@ private WebDriver driver;
 /*private String baseUrl;*/
 
 
-@SuppressWarnings("null")
+/*@SuppressWarnings("null")*/
 
 @Test
   public void ftest() {
 	    driver.get("http://www.bravern-concierge.com/admin/");  
 	    /*driver.get(baseUrl + "/admin/");*/
 	    /*String title = driver.getTitle();*/				 
-		WebElement notificationCheck = null;
-		/*Assert.assertTrue(title.contains("Bravern-Concierge Service"));
-		Assert.assertEquals("true", notificationCheck.getAttribute("checked"));*/
-		Assert.assertEquals(true, notificationCheck.getAttribute("Bravern-Concierge Service").equals("true"));
+		/*WebElement notificationCheck = null;*/
+		Assert.assertEquals("Bravern-Concierge Service", driver.getTitle());
+		/*Assert.assertEquals("true", notificationCheck.getAttribute("checked"));
+		Assert.assertEquals(true, notificationCheck.getAttribute("Bravern-Concierge Service").equals("true"));*/
 		driver.findElement(By.id("ctl00_ContentPlaceHolder1_txtVendorUsername")).clear();
 	    driver.findElement(By.id("ctl00_ContentPlaceHolder1_txtVendorUsername")).sendKeys("dottechtest");
 	    driver.findElement(By.id("ctl00_ContentPlaceHolder1_txtVendorPassword")).clear();
@@ -77,7 +77,7 @@ private WebDriver driver;
 	  System.setProperty("webdriver.ie.driver", "C:\\IEDriver\\IEDriverServer.exe");
 	  /*WebDriver driver=new InternetExplorerDriver();*/
 	  driver = new InternetExplorerDriver();
-	  driver.manage().window().maximize();
+	  /*driver.manage().window().maximize();*/
 	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
   @AfterTest
